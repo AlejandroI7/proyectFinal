@@ -1,0 +1,10 @@
+edu\ar\controller\MovieServletController.class
+edu\ar\controller\CorsFilter.class
+edu\ar\model\Persona.class
+edu\ar\model\Herencia.class
+edu\ar\model\Actor.class
+edu\ar\model\Pelicula.class
+edu\ar\data\Conexion.class
+edu\ar\model\Director.class
+edu\ar\data\PeliculaDAO.class
+edu\ar\model\Polimorfismo.class

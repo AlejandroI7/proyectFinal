@@ -1,0 +1,109 @@
+/* style/index.css */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #09071f;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #220808;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #ffffff;
+    margin: 0;
+}
+
+header svg {
+    vertical-align: middle;
+}
+
+/* Estilos para la tabla */
+.table-responsive {
+    margin-top: 20px;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #1d1d1d;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: #2d2d2d;
+}
+
+.table-primary {
+    background-color: #0066cc;
+    color: #ffffff;
+}
+
+.table-primary th {
+    padding: 10px;
+    text-align: left;
+}
+
+.table-striped th,
+.table-striped td {
+    padding: 10px;
+    border: 1px solid #444;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #220808;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+main.container-fluid {
+    padding: 20px;
+}
+
+.footer {
+    background-color: #220808;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-text {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ff6347; 
+}

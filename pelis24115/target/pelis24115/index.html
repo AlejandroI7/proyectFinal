@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Peliculas listados</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.css" />
+    <script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-center my-5">
+        Proyecto Final Java Web
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M14.75 7.46L12 3.93l1.97-.39l2.74 3.53zm6.87-1.36l-.78-3.92l-3.93.78l2.74 3.54zM4 20v-8h16v1.09c.72.12 1.39.37 2 .72V10H2v10a2 2 0 0 0 2 2h9.81c-.35-.61-.59-1.28-.72-2zm7.81-11.95L9.07 4.5l-1.97.41l2.75 3.53zM4.16 5.5l-.98.19a1.995 1.995 0 0 0-1.57 2.35L2 10l4.9-.97zM20 18v-3h-2v3h-3v2h3v3h2v-3h3v-2z"/></svg>
+      </h1>
+    </header> 
+
+    <main class="container-fluid">
+      <section id="movieSection">
+
+        <form action="/movies" method="post" id = "addMovieForm">
+          <input type="text" name="nombre" placeholder="Nombre" required>
+          <input type="text" name="descripcion" placeholder="Descripción" required>
+          <input type="text" name="genero" placeholder="Género" required>
+          <input type="number" name="calificacion" placeholder="Calificación" required>
+          <input type="number" name="anio" placeholder="Año" required>
+          <input type="number" name="estrellas" placeholder="Estrellas" required>
+          <input type="text" name="director" placeholder="Director" required>
+          <button type="submit">Agregar Película</button>
+        </form>
+      
+      
+
+        <div class="table-responsive">
+          <table class="table table-striped" id="pelis">
+              <thead class="table-primary">
+                  <tr>
+                      <th>Título</th>
+                      <th>Descripción</th>
+                      <th>Género</th>
+                      <th>Puntuación</th>
+                      <th>Año</th>
+                      <th>Estrellas</th>
+                      <th>Director</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  
+              </tbody>
+          </table>
+        </div>
+      
+        
+      </section>
+
+    </main>
+    <script src="js/GetRequest.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      let table = new DataTable('#pelis');
+    </script>
+
+    <footer class="footer">
+      <div class="container">
+          <p class="footer-text">© 2024 Alejandro Zelaya. Todos los derechos reservados.</p>
+          <ul class="footer-links">
+              <li><a href="#sobre">Sobre Nosotros</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+              <li><a href="#privacidad">Política de Privacidad</a></li>
+          </ul>
+      </div>
+  </footer>
+  
+  </body>
+</html>
